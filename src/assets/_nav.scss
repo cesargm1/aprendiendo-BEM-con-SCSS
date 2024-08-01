@@ -1,0 +1,10 @@
+@use "_variables";
+
+nav{
+    background-color: variables.$color-primary-nav;
+    padding: 1em;
+    
+    &__list{
+        list-style: none;
+    }
+ }
