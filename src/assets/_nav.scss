@@ -1,10 +1,29 @@
 @use "_variables";
 
-nav{
+.nav{
     background-color: variables.$color-primary-nav;
     padding: 1em;
     
     &__list{
         list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    &__item {
+
+    &__link{
+        text-decoration: none;
+        color: variables.$color-primary-nav-list-item;
+        
+        &--hover:hover{
+            color: variables.$color-primary-nav-list-item-hover;
+        }
+        &--active:active{
+            color: variables.$color-primary-nav-list-item-active;
+        }
+    }
     }
  }

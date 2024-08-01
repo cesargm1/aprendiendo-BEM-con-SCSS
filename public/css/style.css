@@ -1,9 +1,23 @@
-nav {
+.nav {
   background-color: rgb(24, 84, 162);
   padding: 1em;
 }
-nav__list {
+.nav__list {
   list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+.nav__item__link {
+  text-decoration: none;
+  color: rgba(238, 238, 238, 0.969);
+}
+.nav__item__link--hover:hover {
+  color: rgba(255, 253, 253, 0.969);
+}
+.nav__item__link--active:active {
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
