@@ -2,7 +2,8 @@
 
 .nav{
     background-color: variables.$color-primary-nav;
-    padding: 1em;
+    padding: 1em 0em;
+    overflow-x: hidden;
     
     &__list{
         list-style: none;
