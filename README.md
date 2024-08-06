@@ -1,3 +1,5 @@
+![metodologia BEM](/public/img/Metodología%20BEM.png)
+
 # Que es BEM
 
 BEM sirve para que nuestras clases de CSS estén más organizadas, no tengan problemas de especificidad y el código sea mucho más mantenible.
@@ -87,7 +89,7 @@ nav__item__link--active
 
 ### ¿Pero mi BEM es muy largo como lo reduzco?
 
-Podemos reducirlo de la siguiente manera, pero antes mira este ejemplo de HTML. Sin reducir, cabe aclarar que esto funciona perfectamente, pero si seguimos así, nuestras clases serán inmensas, como por ejemplo esta clase **nav**list**item\_\_link**
+Podemos reducirlo de la siguiente manera, pero antes mira este ejemplo de HTML. Sin reducir, cabe aclarar que esto funciona perfectamente, pero si seguimos así, nuestras clases serán inmensas, como por ejemplo esta clase **nav\_\_list\_\_item\_\_link**
 
 ```html
 <template>
@@ -121,7 +123,7 @@ Podemos reducirlo de la siguiente manera, pero antes mira este ejemplo de HTML. 
 </template>
 ```
 
-Como podemos ver en este ejemplo de arriba el elemento ul tiene esta clase **nav\_\_list** dentro de este tenemos un elemento de lista **nav**list**item** y por último una etiqueta de enlace con esta clase **nav**list**item\_\_link**, pero como nuestro elemento **li** está dentro de un **ul** podemos hacer la clase más corta y lo mismo pasa con el enlace
+Como podemos ver en este ejemplo de arriba el elemento ul tiene esta clase **nav\_\_list** dentro de este tenemos un elemento de lista li con la clase **nav_list_item** y por último una etiqueta a con esta clase **nav\_\_list\_\_item\_\_link**, pero como nuestro elemento **li** está dentro de un **ul** podemos hacer la clase más corta y lo mismo pasa con el enlace
 
 Vamos a ver cómo se hace de una mejor manera haciendo las clases más cortas.
 
@@ -155,7 +157,7 @@ Vamos a ver cómo se hace de una mejor manera haciendo las clases más cortas.
 
 1. Como nuestro elemento li está dentro de un elemento ul nosotros podemos quitar esta parte **\_\_list**, ya que se sobrentiende que un ul está dentro de un elemento li y así nuestra clase queda más limpia.
 
-2. Nuestro elemento a podemos dejarlo así **nav**item**link** quitando la parte de link
+2. Nuestro elemento a podemos dejarlo así **nav\_\_item\_\_link** quitando la parte de **\_\_list**
    o incluso mejor, de esta manera que no está en el código **nav\_\_link** porque se sobrentiende que está dentro de un elemento li y no podemos repetir la clase porque esta misma se haría más larga.
 
 ## Conclusiones
